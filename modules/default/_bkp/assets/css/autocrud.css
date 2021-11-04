@@ -1,0 +1,12 @@
+
+/* AUTOCRUD.CSS 1.0 (2019/01/14) */
+
+@media (width: 800px) {
+	.initial-page {
+		display: none;
+	}
+}
+
+.item-icon {
+	font-size: 12px;
+}

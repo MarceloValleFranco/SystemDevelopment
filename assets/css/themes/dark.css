@@ -1,0 +1,18 @@
+
+/* DARK.CSS 1.0 (2018/11/30) */
+
+/* PAGE HEADER */
+
+body {
+	background-color: #000;
+}
+
+.page-header {
+	background-color: #333;
+	color: #fff;
+}
+
+.breadcrumb-line {
+	background-color: #222;
+	color: #fff;
+}

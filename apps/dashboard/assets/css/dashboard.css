@@ -1,0 +1,80 @@
+
+/* DASHBOARD.CSS 1.0 (2019/04/17) */
+
+body {
+	
+	/* NO SELECT */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+}
+
+iframe {
+	border: 0;
+	margin-bottom: 14px;
+}
+
+.content {
+	padding: 0 16px 16px 16px;
+}
+
+.brazil-map {
+	width: 100%;
+	height: 600px;
+}
+
+.historic, .units, .values, .labels, .sectors, .regions {
+	width: 100%;
+	height: 290px;
+}
+
+.table-selectors {
+	float: right;
+}
+
+
+.td-caption  {
+	max-width: 86px;
+	min-width: 50px;
+	text-align: right;
+	padding: 0 10px 6px 16px;
+}
+
+.td-button  {
+	text-align: right;
+	padding: 0 10px 6px 16px;
+}
+
+.td-combo {
+	width: 110px;
+	text-align: right;
+	padding-bottom: 8px;
+}
+
+.send-button {
+	padding: 6px 20px 6px 20px;
+}
+
+.send-button:hover {
+	background-color: #aaa;
+}
+
+@media (max-width: 540px) {
+
+	.brazil-map {
+		height: 480px;
+	}
+	
+	.historic {
+		height: 380px;
+	}
+
+	.table-selectors {
+		display: none;
+	}	
+	
+}

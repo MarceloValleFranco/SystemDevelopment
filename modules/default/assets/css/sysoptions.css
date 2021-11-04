@@ -1,0 +1,18 @@
+
+/* SYSOPTIONS.CSS 1.0 (2018/11/30) */
+
+table {
+	width: 100%;
+	margin-top: 4px;
+	margin-bottom: 16px;
+}
+
+.td-name {
+	padding-left: 0;
+}
+
+.td-switch {
+	text-align: right;
+	width: 40px;
+	padding-bottom: 4px;
+}

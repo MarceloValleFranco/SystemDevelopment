@@ -1,0 +1,54 @@
+
+/* SECTORS.CSS 1.0 (2019/04/03) */
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: #2D2D2D;
+	color: #B6B6B6;
+	font-family: arial, helvetica, sans-serif;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+small {
+	font-size: 13px;
+}
+
+#columns_basic {
+	height: 208px;
+	max-width: 100%;
+	margin: 70px 14px 0 14px;	
+}
+
+.bars_basic-title {
+	position: absolute;
+	top: 0;
+	left: 16px;
+	z-index: 9999;
+}
+
+.bars_basic-footer {
+	position: absolute;
+	bottom: 80px;
+	right: 50px;
+	z-index: 9999;	
+	padding: 6px 10px 6px 10px;
+	background-color: #1d1d1d;
+}
+
+.canvasjs-chart-tooltip {
+	border: 0;
+}
+
+.columns_basic-footer {
+	position: absolute;
+	width: 60px;
+	height: 16px;
+	left: 12px;
+	bottom: 16px;
+	background-color: #2d2d2d;
+}

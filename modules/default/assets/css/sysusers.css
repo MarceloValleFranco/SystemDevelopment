@@ -1,0 +1,22 @@
+
+/* SYSUSERS.CSS 1.0 (2018/11/22) */
+
+.user-name, .user-surname {
+    text-transform: uppercase;
+}
+
+.user-mail, .user-login {
+    text-transform: lowercase;
+}
+
+.user-password {
+    width: 160px;
+}
+
+.user-avatar {
+	height: 16px;
+}
+
+.status {
+	width: 30px;
+}

@@ -1,0 +1,206 @@
+
+/* DEFAULT.CSS 1.0 (2019/01/10) */
+
+body {
+	
+	/* NO SELECT */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content {
+	padding: 18px 0 0 0;
+}
+
+.widget {
+	margin-top: -20px;
+}
+
+.apps-in-list {
+	padding: 16px 0 8px 8px;
+}
+
+.apps-in-tabs {
+	cursor:pointer;
+	padding: 0 0 16px 0;
+}
+
+.group-title-container {
+	clear: left;
+	padding-left: 8px;
+	height: 30px;
+}
+
+.group-title {
+	text-transform: uppercase;
+}
+
+.nav-link {
+	min-width: 262px;
+	padding: 6px 16px 6px 16px;
+}
+
+.tab-section {
+	font-size: 16px;
+}
+
+.tab-content {
+	width: 428px;
+	margin-left: -22px;
+	padding: 0;
+	overflow: scroll-y;
+}
+
+.tab-pane {
+	width: 100%;
+}
+
+.thumbnail-container {
+	width: 100%;
+	padding: 0 2px 0 16px;
+}
+
+.thumbnail {
+	padding: 0;
+	border: solid 1px #ccc;
+	border-top: solid 2px #00BF7D;
+	width: 117px;
+	height: 146px;
+	margin: 0 8px 16px 8px;
+	float: left;
+}
+
+.thumbnail:hover {
+	cursor: pointer;
+	border-color: #666;
+}
+
+.thumbnail-link {
+	width: 100%;
+	text-align: right; 
+	height: 20px;
+	color: #666;
+	padding: 2px 6px 0 0
+}
+
+.thumbnail-link:hover {
+	color: #222;
+}
+
+.thumbnail-icon {
+	padding: 4px 0 8px 0;
+	text-align: center;
+}
+
+.thumbnail-title {
+	padding: 8px;
+	text-align: center;
+	line-height: 18px;
+}
+
+.suspended {
+	color: #ccc;
+	border-color: #ddd
+}
+
+.suspended:hover {
+	cursor: default;
+	border-color: #ddd
+}
+
+.badge-primary {
+	min-width: 40px;
+}
+
+.tab-section {
+	white-space: nowrap;
+	font-size: 14px
+}
+
+@media (max-width: 540px) {
+	
+	.content {
+		padding: 0 0 0 4px;
+	}	
+	
+	.thumbnail {
+		width: 114px;
+	}
+
+	.thumbnail-icon {
+		padding-top: 16px;
+	}	
+	
+	.thumbnail-title {
+		font-size: 12px;
+	}
+	
+	.thumbnail-container {
+		width: 100%;
+		padding: 0 8px 0 0;
+	}	
+	
+}
+
+@media (max-width: 767px) {
+	
+	.widgets-grid {
+		display: none;
+	}
+
+	.apps-in-list {
+		display: block;
+	}	
+	
+}
+
+@media (min-width: 768px) {
+	
+	.apps-in-list {
+		display: none;
+	}		
+	
+	.widgets-grid {
+		display: block;
+	}	
+		
+}
+
+/* DRAGDROP GRID */
+
+.widget-grid {
+	position: relative;
+	width: 100%;
+}
+
+.item {
+	display: block;
+	position: absolute;
+	width: 380px;
+	height: 162px;
+	margin: 16px 0 0 16px;
+	z-index: 1;
+	color: #444;
+}
+
+.item.muuri-item-dragging {
+	z-index: 3;
+}
+
+.item.muuri-item-releasing {
+	z-index: 2;
+}
+
+.item.muuri-item-hidden {
+	z-index: 0;
+}
+
+.item-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}

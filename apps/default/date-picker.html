@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+      <meta charset='utf-8' />
+      <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+      <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+      <title>eMOBILITY</title>
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,400i,700,900' rel='stylesheet'>
+		<link href='../../assets/icons/icomoon/styles.css?d=3836' rel='stylesheet' />
+		<link href='../../core/plugins/window/window.css?d=3836' rel='stylesheet' />
+		<link href='../../core/vendor/bootstrap/bootstrap.min.css?d=3836' rel='stylesheet' />
+		<link href='../../core/vendor/limitness/css/bootstrap_limitless.min.css?d=3836' rel='stylesheet' />
+		<link href='../../core/vendor/limitness/css/layout.min.css?d=3836' rel='stylesheet' />
+		<link href='../../core/vendor/limitness/css/components.min.css?d=3836' rel='stylesheet' />
+		<link href='../../core/vendor/limitness/css/colors.min.css?d=3836' rel='stylesheet' />
+		<link href='../../assets/css/custom-template.css?d=3836' rel='stylesheet' />
+		<link href='assets/css/autocrud.css?d=3836' rel='stylesheet' />
+		<script src='../../core/vendor/jquery/jquery.min.js?d=3836'></script>
+		<script src='../../core/vendor/bootstrap/bootstrap.bundle.min.js?d=3836'></script>
+		<script src='../../core/plugins/ui/nicescroll.min.js?d=3836'></script>
+		<script src='../../core/plugins/loaders/blockui.min.js?d=3836'></script>
+		<script src='../../core/plugins/window/window.js?d=3836'></script>
+		<script src='../../core/plugins/notifications/bootbox.min.js?d=3836'></script>
+		<script src='../../core/vendor/limitness/js/app.js?d=3836'></script>
+		<script src='../../assets/js/custom.js?d=3836'></script>
+		<script src='assets/js/autocrud.js?d=3836'></script>
+	</head>
+	<body>
+		<script src='../../core/plugins/notifications/bootbox.min.js?d=3836'></script>
+		<script>
+			function confirmBox(i, o) {
+              bootbox.dialog({ message: 'Deseja realmente excluir "' + o + '" ?', title: '<b>Excluir</b>', buttons: {
+                  cancelBtn: { label: '<i class="icon-chevron-left mr-2"></i> Cancelar', className: 'btn-default' },
+                  confirmBtn: { label: '<i class="icon-check mr-2"></i> Confirmar', className: 'btn-danger', callback: function() { window.location.href=('?a=d&n=5&v=sysapps&i=' + i); } }
+              }});
+			}
+		</script>
+		<script src='../../core/plugins/forms/selects/select2.min.js?d=3836'></script>
+		<script src='../../core/plugins/tables/datatables/datatables.min.js?d=3836'></script>
+		<script src='../../core/plugins/tables/datatables/datatables.fixedheader.min.js?d=3836'></script>
+		<script src='../../core/plugins/extensions/leftcontextmenu.js?d=3836'></script>
+		<div class='page-content'>
+			<div class='content-wrapper'>
+				<div class='page-header page-header-light'>
+
+
+				</div>
+				<div class='content'>
+				
+				
+					<script src="../../core/plugins/ui/moment/moment.min.js"></script>
+					<script src="../../core/plugins/pickers/daterangepicker.js"></script>
+					<script src="../../core/plugins/pickers/anytime.min.js"></script>
+					<script src="../../core/plugins/pickers/pickadate/picker.js"></script>
+					<script src="../../core/plugins/pickers/pickadate/picker.date.js"></script>
+					<script src="../../core/plugins/pickers/pickadate/picker.time.js"></script>
+					<script src="../../core/js/plugins/pickers/pickadate/legacy.js"></script>
+					<script src="../../core/plugins/notifications/jgrowl.min.js"></script>
+
+					<script>
+					
+						moment.locale('pt_BR');
+
+						var DateTimePickers = function() {
+
+							var _componentDaterange = function() {
+							
+								if (!$().daterangepicker) { console.warn('Warning - daterangepicker.js is not loaded.'); return; }
+
+								$('.daterange-ranges').daterangepicker(									{
+									
+									
+										opens: 'left',
+
+										locale: {
+											applyLabel: 'Selecionar',
+											cancelLabel: 'Cancelar',
+											startLabel: 'Data Inicial',
+											endLabel: 'Data Final',
+											customRangeLabel: 'Intervalo entre Datas',
+											daysOfWeek: ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX','SAB'],
+											monthNames: ['JANEIRO', 'FEVEREIRO', 'MARÇO', 'ABRIL', 'MAIO', 'JUNHO', 'JULHO', 'AGOSTO', 'SETEMBRO', 'OUTUBRO', 'NOVEMBRO', 'DEZEMBRO'],
+											firstDay: 1
+										},
+										
+										formatSubmit: 'yyyy/mm/dd',																
+										startDate: moment(),
+										endDate: moment(),
+										minDate: '01/01/2012',
+										maxDate: '12/31/2019',
+										dateLimit: { days: 60 },
+										ranges: {
+											'Hoje': [moment(), moment()],
+											'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+											'Últimos 7 Dias': [moment().subtract(6, 'days'), moment()],
+											'Últimos 30 Dias': [moment().subtract(29, 'days'), moment()],
+											'Mês Atual': [moment().startOf('month'), moment().endOf('month')],
+											'Mês Passado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+										},
+										opens: 'left',
+										applyClass: 'btn-sm bg-slate-600',
+										cancelClass: 'btn-sm btn-light'
+									},
+									function(start, end) {									
+										sD = start.format('DD/MM/YYYY'); iniDate = start.format('YYYY-MM-DD');
+										eD = end.format('DD/MM/YYYY'); endDate = end.format('YYYY-MM-DD');
+										if (sD != eD) { sD = sD + ' - ' + eD }
+										$('.daterange-ranges span').html(sD);
+										document.getElementById('IniDate').value = iniDate;
+										document.getElementById('EndDate').value = endDate;
+									}
+								);
+
+								$('.daterange-ranges span').html(moment().subtract(29, 'days').format('DD/MM/YYYY'));
+								
+							};
+						 
+							return { init: function() { _componentDaterange(); } }
+							
+						}();
+
+						document.addEventListener('DOMContentLoaded', function() { DateTimePickers.init(); });
+
+					</script>	
+								
+
+					<div class="form-group">
+						<button type="button" class="btn btn-warning daterange-ranges">
+							<i class="icon-calendar22 mr-2"></i>
+							<span></span>
+						</button>
+						<input type='text' value='' id='IniDate' name='IniDate' />
+						<input type='text' value='' id='EndDate' name='EndDate' />
+					</div>
+
+
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
