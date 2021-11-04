@@ -1,0 +1,102 @@
+
+/* BRAZILMAP.CSS 1.0 (2019/03/07) */
+
+body {
+    background-color: #2D2D2D;
+	padding: 0;
+	overflow: hidden;
+	color: #B6B6B6;
+	font-family: arial, helvetica, sans-serif;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+.right-box {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+
+.sigla {	
+	color: #E9A31A;
+	font-size: 44px;
+	font-weight: bold;
+	font-family: arial-narrow, arial, helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.back-brazil {
+	color: #888;
+	font-size: 8px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.back-brazil:hover {
+	color: #fff;
+}
+
+#hovered-region,
+#clicked-region {
+    background: transparent;
+    border: 0px solid #e5eabd;
+    color: #888;
+    display: inline-block;
+    margin-right: 3px;
+    padding: 4px 8px;
+    text-align: center;
+    width: 170px
+}
+
+#hovered-region span,
+#clicked-region span {
+    color: #888;
+    font-weight: bold
+}
+
+#brazil-map {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+    width: 600px;
+    height: 600px;
+	cursor: pointer;
+}
+
+.content {
+	margin: 0;
+	padding: 0;
+}
+
+.brazil-map-title {
+	position: absolute;
+	top: 0;
+	left: 16px;
+	z-index: 9999;
+}
+
+.legend {
+	position:absolute;
+	left:16px;
+	bottom:16px; 
+}
+
+.td-image {
+	padding-right: 4px;
+}
+
+.td-max, .td-min {
+	font-size: 12px;
+}
+
+
+@media (max-width: 540px) {
+
+	#brazil-map {
+		top: 40px;
+		width: 380px;
+		height: 460px;
+	}
+}

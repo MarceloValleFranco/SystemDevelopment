@@ -1,0 +1,125 @@
+﻿
+/* SYSCHAT.CSS 1.0 (2017/02/23) */
+
+body {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#usersWindow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 224px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: auto;
+    padding: 2px 2px 10px 2px;
+}
+
+#messagesWindow, #inputWindow {
+    position: absolute;
+    left: 240px;
+    right: 0;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#messagesWindow {
+    overflow: auto;
+    top: 0;
+    bottom: 4em;
+    padding: 16px;
+}
+
+#inputWindow {
+    display: block;
+    bottom: 0;
+    height: 3em;
+    padding: 12px 10px 0 10px;
+    margin-top: 1em;
+}
+
+#inputText {
+    width: 100%;
+    font-size: 14px;
+    border: 0;
+    padding: 4px 8px 4px 8px;
+}
+
+.userPhoto {
+    width: 40px;
+    border: solid 2px #ccc;
+    border-radius: 4px;
+}
+
+.infoNote {
+    font-size: 11px;
+    color: #888;
+}
+
+.time {
+    margin: 2px 4px -2px 0;
+    color: #aaa;
+}
+
+.user {
+    margin: 2px 4px -2px 10px;
+    color: #aaa;
+}
+
+.triangle {
+    margin: 2px 4px -2px 4px;
+    color: #aaa;
+}
+
+.bubble {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    /*box-shadow: 0 0 6px #B2B2B2;*/
+    display: inline-block;
+    padding: 10px 16px;
+    position: relative;
+    vertical-align: top;
+    width: 96%;
+}
+
+    .bubble::before {
+        background-color: #F2F2F2;
+        content: "\00a0";
+        display: block;
+        height: 16px;
+        position: absolute;
+        top: 11px;
+        transform: rotate( 29deg ) skew( -35deg );
+        -moz-transform: rotate( 29deg ) skew( -35deg );
+        -ms-transform: rotate( 29deg ) skew( -35deg );
+        -o-transform: rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+        width: 20px;
+    }
+
+.you {
+    float: left;
+    margin: 5px 45px 5px 20px;
+}
+
+    .you::before {
+        /*box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );*/
+        left: -9px;
+    }
+
+.me {
+    float: right;
+    margin: 5px 20px 5px 45px;
+}
+
+    .me::before {
+        /*box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );*/
+        right: -9px;
+    }

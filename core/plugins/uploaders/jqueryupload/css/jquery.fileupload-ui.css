@@ -1,0 +1,183 @@
+﻿@charset "UTF-8";
+/*
+ * jQuery File Upload UI Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+    margin-bottom: 5px;
+}
+
+.progress-animated .progress-bar,
+.progress-animated .bar {
+    background: url("../img/progressbar.gif") !important;
+    filter: none;
+}
+
+.fileupload-process {
+    float: right;
+    display: none;
+}
+
+.fileupload-processing .fileupload-process,
+.files .processing .preview {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/loading.gif") center no-repeat;
+    background-size: contain;
+}
+
+.files audio,
+.files video {
+    max-width: 300px;
+}
+
+@media (max-width: 767px) {
+    .fileupload-buttonbar .toggle,
+    .files .toggle,
+    .files .btn span {
+        display: none;
+    }
+
+    .files .name {
+        padding: 10px 0 0 0;
+        width: 100px;
+        word-wrap: break-word;
+    }
+
+    .files audio,
+    .files video {
+        display: none;
+    }
+
+    .files img,
+    .files canvas {
+        display: none;
+    }
+}
+
+/* CUSTOM */
+
+body {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.toolbar .btn {
+    margin-right: 4px;
+}
+
+.fileListContainer {
+    padding: 2px 0 0 2px;
+    height: 160px;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+}
+
+.fileList {
+    padding: 0 10px 0 0;
+    height: 154px;
+    overflow: auto;
+}
+
+td .start {
+    margin: 0 0 6px 0;
+}
+
+.button-td {
+    width: 32px;
+}
+
+.button-left-title {
+    display: none;
+}
+
+@media (min-width: 540px) {
+
+    .fileListContainer {
+        height: 320px;
+    }
+
+    .fileList {
+        height: 314px;
+    }
+
+    td .start {
+        margin: 0 4px 0 0;
+    }
+
+    .button-left-title {
+        display: inline;
+        margin-left: 8px;
+    }
+
+    .files .name {
+        width: 160px;
+    }
+
+    .files audio,
+    .files video {
+        display: inline;
+        max-width: 140px;
+    }
+
+    .files canvas {
+        display: inline;
+        max-width: 100%;
+    }
+
+    .files img {
+        display: inline;
+        max-width: 140px;
+    }
+
+    .button-td {
+        width: 140px;
+    }
+
+}
+
+/* OUTLINE BUTTONS */
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    border-radius: 2px;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f35320;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}

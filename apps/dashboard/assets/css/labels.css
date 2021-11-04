@@ -1,0 +1,52 @@
+
+/* LABELS.CSS 1.0 (2019/05/02) */
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+td {
+	width: 49%;
+	vertical-align: top;
+}
+
+.content-area {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h4 {
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 1px 1px #666;
+	line-height: 1;
+}
+
+h3 {
+	color: #fff;
+	font-size: 20px;
+	text-shadow: 1px 1px #666;
+	line-height: 1;
+}
+
+h2 {
+	color: #eee;
+	font-size: 46px;
+	text-shadow: 1px 1px #666;
+	line-height: 0.6;
+}
+
+.box1 {
+  background-image: linear-gradient( 135deg, #0ECDA4 10%, #0091F8 100%);
+  padding: 10px 0 16px 16px;
+  border-right: solid 2px #1E1E1E;
+}
+
+.box2 {
+  background-image: linear-gradient( 135deg, #FEAF18 10%, #F57026 100%);
+  padding: 10px 0 16px 16px;
+  border-left: solid 2px #1E1E1E;
+}

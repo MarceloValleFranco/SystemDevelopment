@@ -1,0 +1,124 @@
+
+/* LOGIN.CSS 1.0 (2019/01/16) */
+
+body {
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(../images/background/login-lg-template.png);
+}
+
+@media (max-width: 1400px) {
+    body {
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        background: url(../images/background/login-md-template.png);
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        background: url(../images/background/login-sm-template.png)
+    }
+}
+
+.navbar-dark {
+	background: transparent;
+	border: 0;
+}
+
+.fullscreen-bg {
+	display: none; /* Remove for Video Background */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-color: #000;
+}
+
+.fullscreen-bgvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bgvideo {
+        height: 200%;
+        top: -50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    @media (max-aspect-ratio: 16/9) {
+        .fullscreen-bgvideo {
+            width: 300%;
+            left: -100%;
+        }
+    }
+}
+
+.login-panel {
+    min-width: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}
+
+.login-panel-head {
+    display: none;
+}
+
+.login-footer {
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    padding-bottom: 16px;
+	text-align: center;
+}
+
+    .login-footer a {
+        color: #888;
+    }
+
+        .login-footer a:hover {
+            color: #222;
+        }
+
+.login-panel-foot {
+    display: none;
+}
+
+.forgot-password, .back-to-login, .user-register, .user-terms {
+    font-size: 12px;
+    text-align: center;
+    line-height: 4px;
+    padding: 8px 0 8px 0;
+    color: #888;
+    cursor: pointer;
+}
+
+.help-block {
+    margin-top: 4px;
+    font-size: 12px;
+	color: #F5594E;
+}
+
+.copyright-image {
+    margin-bottom: 8px;
+}

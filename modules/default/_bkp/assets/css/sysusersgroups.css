@@ -1,0 +1,22 @@
+
+/* SYSUSERSGROUPS.CSS 1.0 (2018/11/22) */
+
+.user-group-name {
+    text-transform: uppercase;
+}
+
+.user-group-mail {
+    text-transform: lowercase;
+}
+
+.user-password {
+    width: 160px;
+}
+
+.user-group-avatar {
+	height: 16px;
+}
+
+.status {
+	width: 30px;
+}

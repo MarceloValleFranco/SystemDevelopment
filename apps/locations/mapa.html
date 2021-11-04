@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+      <meta charset='utf-8' />
+      <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+      <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+      <title>ConectAgro</title>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:400,400i,700,900' rel='stylesheet'>
+	  <link href='assets/css/default.css?d=4613' rel='stylesheet' />
+	  <script src='assets/js/default.js?d=4613'></script>
+	</head>
+  <body>
+      <div class='map' id='map'></div>
+	<script>
+		function initMap() {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				disableDefaultUI: true,
+				mapTypeId: 'hybrid',
+				center: new google.maps.LatLng(-13.286135, -54.253492), zoom: 14
+			});
+
+		}
+		function downloadUrl(url, callback) {
+			var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+			request.onreadystatechange = function() {
+				if (request.readyState == 4) {
+					request.onreadystatechange = doNothing;
+					callback(request, request.status);
+				}
+			};
+			request.open('GET', url, true);
+			request.send(null);
+		}
+		function doNothing() {}
+	</script>
+	<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCKDif2pmf1LShDRPzO-dZr7W-nf8h9T-g&callback=initMap'></script>
+  </body>
+</html>

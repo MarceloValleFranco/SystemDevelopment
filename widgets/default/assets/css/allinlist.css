@@ -1,0 +1,85 @@
+
+/* ALLINLIST.CSS 1.0 (2019/11/01) */
+
+.all-in-list {
+	padding: 0;
+}
+
+.card-body-list {
+	padding:0 8px 0 8px;
+}
+
+.thumbnail-list-container {
+	width: 100%;
+	padding: 0 0 0 8px;
+}
+
+.thumbnail-list {
+	padding: 0;
+	border: solid 1px #ccc;
+	border-top: solid 2px #2196F3;
+	width: 117px;
+	height: 146px;
+	margin: 0 8px 16px 8px;
+	float: left;
+}
+
+.thumbnail-list:hover {
+	cursor: pointer;
+	border-color: #666;
+}
+
+.thumbnail-list-link {
+	width: 100%;
+	text-align: right; 
+	height: 20px;
+	color: #666;
+	padding: 2px 6px 0 0
+}
+
+.thumbnail-list-link:hover {
+	color: #222;
+}
+
+.thumbnail-list-icon {
+	padding: 16px 0 8px 0;
+	text-align: center;
+}
+
+.thumbnail-list-title {
+	padding: 8px;
+	text-align: center;
+	line-height: 18px;
+}
+
+.suspended {
+	color: #ccc;
+	border-color: #ddd
+}
+
+.suspended:hover {
+	cursor: default;
+	border-color: #ddd
+}
+
+@media (max-width: 540px) {
+	
+	.thumbnail-list-container {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.thumbnail-list {
+		width: 102px;
+		height: 136px;
+	}
+
+	.thumbnail-list-icon {
+		padding-top: 16px;
+	}	
+	
+	.thumbnail-list-title {
+		font-size: 12px;
+	}
+	
+}

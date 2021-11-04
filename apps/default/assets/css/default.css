@@ -1,0 +1,80 @@
+
+/* DEFAULT.CSS 1.0 (2019/01/16) */
+
+body {
+	
+	/* NO SELECT */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* DRAGDROP GRID */
+
+.card {
+	margin-bottom: 18px;
+}
+
+.all-in-tabs {
+	position: relative;
+	width: 100%;
+}
+
+.item {
+	margin: 16px 0 0 16px;
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+
+.item.muuri-item-dragging {
+	z-index: 3;
+}
+
+.item.muuri-item-releasing {
+	z-index: 2;
+}
+
+.item.muuri-item-hidden {
+	z-index: 0;
+}
+
+.item-content {
+	position: relative;
+	width: 100%;
+	margin-bottom: -16px;
+}
+
+/* APPEARANCE CONTROL */
+
+@media (max-width: 1183px) {
+	
+	.widgets-grid {
+		display: none;
+	}
+
+	.all-in-list {
+		display: block;
+	}	
+	
+}
+
+@media (min-width: 1184px) {
+	
+	.content {
+		padding-right: 16px;
+		padding-bottom: 0;
+	}
+	
+	.all-in-list {
+		display: none;
+	}		
+	
+	.widgets-grid {
+		display: block;
+	}	
+		
+}

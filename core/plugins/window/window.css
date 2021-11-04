@@ -1,0 +1,136 @@
+
+/* WINDOW.CSS (2018/12/06) - Based on https://github.com/earmbrust/bootstrap-window */
+
+[data-dismiss=window] {
+    visibility: hidden
+}
+
+.disable-scroll, .window .window-body.disable-scroll, .window .window-footer.disable-scroll {
+    overflow: hidden
+}
+
+.disable-select {
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none
+}
+
+.disable-shade {
+    background-color: #fff;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.window {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    min-height: 100px;
+    min-width: 200px;
+    outline: 0;
+    position: absolute;
+    -webkit-box-shadow: 0 1px 0 0 #ddd;
+    box-shadow: 0 1px 0 0 #ddd
+}
+
+    .window .window-header {
+        cursor: move;
+        -khtml-user-select: none;
+        min-height: 16.428571429px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        padding: 16px 16px 14px 16px;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none
+    }
+
+    .window:hover {
+        border: solid 1px #aaa;
+    }
+
+    .window .window-header .window-title {
+        color: #2196F3;
+        margin: 0
+    }
+	
+	.top-close {
+		margin-bottom: 4px;
+	}
+
+    .window .window-body {
+        padding: 16px 16px 10px 16px;
+        position: relative;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .window .window-footer {
+        padding: 16px;
+        position: relative;
+        text-align: right
+    }
+
+        .window .window-footer .btn + .btn, .window-pane .label + .label {
+            margin-bottom: 0;
+        }
+
+        .window .window-footer .disable-shade {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px
+        }
+
+    .window [data-dismiss=window] {
+        visibility: visible
+    }
+
+    .window.active .window-header .window-title {
+        color: #222;
+    }
+
+    .window.ew-resize {
+        cursor: ew-resize
+    }
+
+    .window.ns-resize {
+        cursor: ns-resize
+    }
+
+.window-pane {
+    z-index: 999;
+    position: absolute;
+    bottom: 18px;
+    left: 16px;
+}
+
+    .window-pane .label {
+        cursor: pointer;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        margin: 8px 6px 8px 0;
+		background-color: #2196F3;
+		padding: 4px 8px 4px 8px;
+		border-radius: 4px;
+		color: #fff;
+		font-size: 10px;
+		text-transform: uppercase;
+    }
+
+        .window-pane .label .close {
+            float: none;
+            font-size: 12px;
+            margin-left: 6px;
+			color: #fff;
+        }

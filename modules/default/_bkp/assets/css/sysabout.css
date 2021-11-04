@@ -1,0 +1,65 @@
+
+/* SYSABOUT.CSS 1.0 (2018/11/08) */
+
+body {
+	background-image: none;
+}
+
+.page-container {
+    overflow: hidden;
+}
+
+.sysheader {
+	border: solid 1px #ccc;
+	border-radius: 4px;
+	padding: 0 16px 16px 16px;
+}
+
+.syslogo {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.syslogoimg {
+    padding-top: 8px;
+}
+
+.systitle {
+    text-align: center;
+}
+
+.sysnote {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.sysauthor {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.sysauthorimg {
+    width: 82px;
+}
+
+.sysfooter {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+}
+
+.syscopyright {
+    text-align: center;
+    padding-top: 8px;
+    color: #555;
+}
+
+.sysnotice {
+    text-align: center;
+    padding-top: 8px;
+    font-size: 8px;
+}
+
+.note {
+    padding: 2px 20px 2px 20px;
+}

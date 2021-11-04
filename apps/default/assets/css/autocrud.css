@@ -1,0 +1,17 @@
+
+/* AUTOCRUD.CSS 1.0 (2019/01/30) */
+
+@media (width: 800px) {
+	.initial-page {
+		display: none;
+	}
+}
+
+.item-icon {
+	font-size: 12px;
+}
+
+.status-icon {
+	margin-left: 4px;
+	margin-bottom: 4px;
+}
